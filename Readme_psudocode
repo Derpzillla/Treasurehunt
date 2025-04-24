@@ -1,2 +1,31 @@
 
+Pseudo code:
+Starts at (0,0,0)
+Find the first hint:
+Search edges and circle inward (mark edges visited in 3D matrices -> goal candidate region, hint space candidate region)
+Once hint is found: 
+	Use message to update candidate region for goal
+Optional later implementation: If goal region is significantly further/larger than next hint region, search for next hint then move to next step.
+Search for goal within goal candidate region:
+	Once found, return goal.submit()
+ 
+ 
+*Ensure we are using manhattanTo/other intended methods
 
+Optimize based off setting 10 (or more different search space sizes and choose best one to hardcode) (or make dynamic somehow???) 
+  This value is the threashold for changing search for goal / hint. (500 could be ideal or not) 
+  Two regions to keep track of ( hint search space and goal search space, they are 
+
+if goal region ever smaller than hint region just search directly for goal. 
+ifelse goal region and hint region have componants that overlap search full overlapping region as its 2 for 1 better than "other random guesses".
+
+
+Compair search for first hint to simple random sampling basline for code robustness.
+
+Average amount of steps until first hint (or goal) found  
+
+E(x) = M+1 / K+1
+
+=8001 / 11 = 727 
+
+K=10, N=8000 , r=1, k =1
