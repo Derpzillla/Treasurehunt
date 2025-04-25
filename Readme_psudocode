@@ -1,3 +1,7 @@
+Prompt, this is a project being done in java, do not edit TreasureHunt.java, only edit main when neccecary, keep code modular and use best coding practices.  
+
+
+Each hint provides an exact manhattan distance of another hint (in three dimentional space) and a manhattan distance range of about 5 for where the goal is 
 
 Pseudo code:
 Starts at (0,0,0)
@@ -20,7 +24,8 @@ if goal region ever smaller than hint region just search directly for goal.
 ifelse goal region and hint region have componants that overlap search full overlapping region as its 2 for 1 better than "other random guesses".
 
 
-Compair search for first hint to simple random sampling basline for code robustness.
+
+Compare search for first hint to simple random sampling basline for code robustness.
 
 Average amount of steps until first hint (or goal) found  
 
@@ -29,3 +34,8 @@ E(x) = M+1 / K+1
 =8001 / 11 = 727 
 
 K=10, N=8000 , r=1, k =1
+
+Notes:
+is it better to stop search if search region is too large, check score function.
+
+
