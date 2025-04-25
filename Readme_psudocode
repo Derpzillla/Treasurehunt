@@ -38,4 +38,6 @@ K=10, N=8000 , r=1, k =1
 Notes:
 is it better to stop search if search region is too large, check score function.
 
+Jim got a score of 90 using some methods and throwing out mg size over 2000. 
+
 
